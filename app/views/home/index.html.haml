@@ -1,6 +1,10 @@
-%section#portfolio
-  -@portfolios.each do |portfolio|
-    =portfolio.title
-%section#skill
-  -@skills.each do |skill|
-    =skill.name
+.container
+  %section#portfolio
+    -@portfolios.each do |portfolio|
+      =portfolio.title
+  %section#skill
+    -@skills.each do |skill|
+      =skill.name
+  %section#experience
+    -@experiences.each do |experience|
+      =experience.summary
