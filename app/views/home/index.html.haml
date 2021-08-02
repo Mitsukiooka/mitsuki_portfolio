@@ -1,10 +1,15 @@
 .container
   %section#portfolio
     -@portfolios.each do |portfolio|
-      =portfolio.title
+      .portfolioContainer
+        %p=portfolio.title
+        %p=portfolio.description
+  %section#about
+    %p
+      I am Mitsuki
   %section#skill
     -@skills.each do |skill|
-      =skill.name
+      %p=skill.name
   %section#experience
     -@experiences.each do |experience|
-      =experience.summary
+      %p=experience.summary
