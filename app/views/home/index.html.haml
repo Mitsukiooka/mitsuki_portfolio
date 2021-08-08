@@ -18,14 +18,14 @@
 %header.masthead.bg-primary.text-white.text-center
   .container.d-flex.align-items-center.flex-column
     / Masthead Avatar Image
-    %img.masthead-avatar.mb-5{:alt => "Mitsuki", :src => "assets/img/avataaars.svg"}/
+    %img.masthead-avatar.mb-5{:alt => "Mitsuki", :src => "../my_profile.JPG"}/
     / Masthead Heading
     %h1.masthead-heading.text-uppercase.mb-0 MITSUKI OOKA
     / Icon Divider
     .divider-custom.divider-light
       .divider-custom-line
       .divider-custom-icon
-        %i.fas.fa-star
+        %i.fab.fa-jedi-order
       .divider-custom-line
     / Masthead Subheading
     %p.masthead-subheading.font-weight-light.mb-0 Full Stack Web Developer - Web Director
@@ -38,18 +38,23 @@
     .divider-custom
       .divider-custom-line
       .divider-custom-icon
-        %i.fas.fa-star
+        %i.fas.fa-atom
       .divider-custom-line
     / Portfolio Grid Items
     .row.justify-content-center
       / Portfolio Item 1
-      -@portfolios.each do |portfolio|
-        .col-md-6.col-lg-4.mb-5
-          .portfolio-item.mx-auto{"data-bs-target" => "#portfolioModal1", "data-bs-toggle" => "modal"}
-            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
-              .portfolio-item-caption-content.text-center.text-white
-                %i.fas.fa-plus.fa-3x
-            %img.img-fluid{:alt => "...", :src => "assets/img/portfolio/cabin.png"}/
+      .col-md-6.col-lg-4.mb-5
+        .portfolio-item.mx-auto{"data-bs-target" => "#portfolioModal1", "data-bs-toggle" => "modal"}
+          .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+            .portfolio-item-caption-content.text-center.text-white
+              %text Movie Log
+          %img.img-fluid{:alt => "movielog", :src => "../movielog.png"}/
+      .col-md-6.col-lg-4.mb-5
+        .portfolio-item.mx-auto{"data-bs-target" => "#portfolioModal2", "data-bs-toggle" => "modal"}
+          .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+            .portfolio-item-caption-content.text-center.text-white
+              %text Memo App
+          %img.img-fluid{:alt => "movielog", :src => "../memoapp.png"}/
 / About Section
 %section#about.page-section.bg-primary.text-white.mb-0
   .container
@@ -59,7 +64,7 @@
     .divider-custom.divider-light
       .divider-custom-line
       .divider-custom-icon
-        %i.fas.fa-star
+        %i.fab.fa-canadian-maple-leaf
       .divider-custom-line
     / About Section Content
     .row
@@ -76,7 +81,7 @@
     .divider-custom
       .divider-custom-line
       .divider-custom-icon
-        %i.fas.fa-star
+        %i.fas.fa-code
       .divider-custom-line
     / About Section Content
     .row
@@ -108,7 +113,7 @@
 %section#experience.page-section.bg-primary.text-white.mb-0
   .container
     / About Section Heading
-    %h2.page-section-heading.text-center.text-uppercase.text-white history
+    %h2.page-section-heading.text-center.text-uppercase.text-white Experience
     / Icon Divider
     .divider-custom.divider-light
       .divider-custom-line
@@ -129,6 +134,60 @@
               05/2021 - Ongoing
             %i.fas.fa-map-marker-alt
             %text Tokyo, Japan
+          .mb-2
+            %text
+              Double crop is a company that train web engineers then dispatch them to various IT companies.
+              I've been working here as a Ruby engineer. Now I'm responsible for maintainence and development of EC service of e-book for education.
+      .col-lg-8.mx-auto.mb-5
+        %div
+          %h4.text-uppercase.mb-4
+            Back-end Web Developer
+          %h5
+            Info Athlete
+          .mb-2
+            %i.far.fa-calendar-alt
+            %text
+              07/2020 - 02/2021
+            %i.fas.fa-map-marker-alt
+            %text Tokyo, Japan
+          .mb-2
+            %text
+              Info Athlete is a company that serves many industories by offering high quality web applications.
+              I worked here as a Ruby engineer. I've made several web apps such as Employee training app, Job change site and Restaurants web site.
+  .container
+    / About Section Heading
+    %h2.page-section-heading.text-center.text-uppercase.text-white Education
+    / Icon Divider
+    .divider-custom.divider-light
+      .divider-custom-line
+      .divider-custom-icon
+        %i.fas.fa-star
+      .divider-custom-line
+    .row
+      .col-lg-8.mx-auto.mb-5
+        %div
+          %h4.text-uppercase.mb-4
+            Global Japanese Studies
+          %h5
+            Meiji University
+          .mb-2
+            %i.far.fa-calendar-alt
+            %text
+              04/2013 - 03/2017
+            %i.fas.fa-map-marker-alt
+            %text Tokyo, Japan
+      .col-lg-8.mx-auto.mb-5
+        %div
+          %h4.text-uppercase.mb-4
+            Exchange program
+          %h5
+            University of Alabama
+          .mb-2
+            %i.far.fa-calendar-alt
+            %text
+              08/2015 - 12/2015
+            %i.fas.fa-map-marker-alt
+            %text Alabama, United States
 
 / Footer
 %footer.footer.text-center

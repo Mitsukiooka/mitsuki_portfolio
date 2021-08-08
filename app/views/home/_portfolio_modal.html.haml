@@ -10,17 +10,43 @@
           .row.justify-content-center
             .col-lg-8
               / Portfolio Modal - Title
-              %h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0 Log Cabin
+              %h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0 Movie Log
               / Icon Divider
               .divider-custom
                 .divider-custom-line
                 .divider-custom-icon
-                  %i.fas.fa-star
+                  %i.fas.fa-atom
                 .divider-custom-line
               / Portfolio Modal - Image
-              %img.img-fluid.rounded.mb-5{:alt => "...", :src => "assets/img/portfolio/cabin.png"}/
+              %img.img-fluid.rounded.mb-5{:alt => "...", :src => "../movielog_modal.png"}/
               / Portfolio Modal - Text
-              %p.mb-4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+              %p.mb-4
+                "Movie Log" is a web app where you can add your favorites movies and post reviews for them. Once you registered, you will be able to see other user's opinion as well.
+              %button.btn.btn-primary{"data-bs-dismiss" => "modal", :href => "#!"}
+                %i.fas.fa-times.fa-fw
+                Close Window
+#portfolioModal2.portfolio-modal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "portfolioModal2", :tabindex => "-1"}
+  .modal-dialog.modal-xl
+    .modal-content
+      .modal-header.border-0
+        %button.btn-close{"aria-label" => "Close", "data-bs-dismiss" => "modal", :type => "button"}
+      .modal-body.text-center.pb-5
+        .container
+          .row.justify-content-center
+            .col-lg-8
+              / Portfolio Modal - Title
+              %h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0 Memo App
+              / Icon Divider
+              .divider-custom
+                .divider-custom-line
+                .divider-custom-icon
+                  %i.fas.fa-atom
+                .divider-custom-line
+              / Portfolio Modal - Image
+              %img.img-fluid.rounded.mb-5{:alt => "...", :src => "../memoapp_modal.png"}/
+              / Portfolio Modal - Text
+              %p.mb-4
+                "Memo App" is a iOS app which you can take a simple memo in daily life. It can store whatever you come up with.
               %button.btn.btn-primary{"data-bs-dismiss" => "modal", :href => "#!"}
                 %i.fas.fa-times.fa-fw
                 Close Window
