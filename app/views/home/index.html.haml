@@ -18,7 +18,7 @@
 %header.masthead.bg-primary.text-white.text-center
   .container.d-flex.align-items-center.flex-column
     / Masthead Avatar Image
-    %img.masthead-avatar.mb-5{:alt => "Mitsuki", :src => "../my_profile.JPG"}/
+    %img.masthead-avatar.mb-5{:alt => "Mitsuki", :src => "../my_profile.png"}/
     / Masthead Heading
     %h1.masthead-heading.text-uppercase.mb-0 MITSUKI OOKA
     / Icon Divider
@@ -28,9 +28,9 @@
         %i.fab.fa-jedi-order
       .divider-custom-line
     / Masthead Subheading
-    %p.masthead-subheading.font-weight-light.mb-0 Full Stack Web Developer - Web Director
+    %p.masthead-subheading.font-weight-light.mb-0 Full Stack Web Developer
 / Portfolio Section
-%section#portfolio.page-section.portfolio
+%section#portfolio.page-section.bg-light.portfolio
   .container
     / Portfolio Section Heading
     %h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Portfolio
@@ -54,7 +54,7 @@
           .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
             .portfolio-item-caption-content.text-center.text-white
               %text Memo App
-          %img.img-fluid{:alt => "movielog", :src => "../memoapp.png"}/
+          %img.img-fluid{:alt => "movielog", :src => "../memoapp_thumb.png"}/
 / About Section
 %section#about.page-section.bg-primary.text-white.mb-0
   .container
@@ -71,9 +71,9 @@
       .col-lg-4.ms-auto
         %p.lead Full stack web engineer with high motivation and willingness to learn. 1 year of experience developing scalable web applications.
       .col-lg-4.me-auto
-        %p.lead Having high interest in imporoving my backend, frontend and infrastructure skills and actively embed it in the web application.
+        %p.lead Having high interest in improving my backend, frontend and infrastructure skills and actively embed it in the web application.
 / Skill Section
-%section#skill.page-section.text-secondary.mb-0
+%section#skill.page-section.bg-light.text-secondary.mb-0
   .container
     / About Section Heading
     %h2.page-section-heading.text-center.text-uppercase.text-secondary Skill
@@ -190,7 +190,7 @@
             %text Alabama, United States
 
 / Footer
-%footer.footer.text-center
+%footer.footer.text-center.bg-secondary
   .container
     .row
       / Footer Location
